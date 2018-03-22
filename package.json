@@ -1,0 +1,11 @@
+{
+  "name": "reaio30-ai-property-check",
+  "version": "1.0.0",
+  "description": "Using Google Cloud Replatform to check if the uploaded images are valid when uploading a listing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
