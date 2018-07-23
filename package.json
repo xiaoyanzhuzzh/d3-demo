@@ -18,5 +18,8 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
   }
 }

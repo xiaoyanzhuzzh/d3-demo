@@ -1,7 +1,7 @@
 'use strict';
 
-var d3 = require("d3");
-var data = [30, 86, 168, 281, 303, 365];
+const d3 = require("d3");
+const data = [30, 86, 168, 281, 303, 365];
 
 d3.select("#app")
   .selectAll("div")

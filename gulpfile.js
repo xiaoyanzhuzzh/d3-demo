@@ -1,14 +1,13 @@
 'use strict';
 
-var gulp = require('gulp');
-var browserify = require('browserify');
-var del = require('del');
-var source = require('vinyl-source-stream');
-var browserSync = require('browser-sync');
-var babel = require('babelify');
-var rename = require('gulp-rename');
-var reload = browserSync.reload;
-
+const gulp = require('gulp');
+const browserify = require('browserify');
+const del = require('del');
+const source = require('vinyl-source-stream');
+const browserSync = require('browser-sync');
+const babel = require('babelify');
+const rename = require('gulp-rename');
+const reload = browserSync.reload;
 
 gulp.task('clean', function(done) {
   del(['dist'], done);
