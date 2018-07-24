@@ -10,11 +10,11 @@ const rename = require('gulp-rename');
 const reload = browserSync.reload;
 
 gulp.task('clean', function(done) {
-  del(['dist'], done);
+  return del(['dist'], done);
 });
 
 gulp.task('bundle', function () {
-  browserify('./src/index.js')
+  return browserify('./src/index.js')
     .transform(babel)
     .bundle()
     .pipe(source('build.js'))
@@ -22,13 +22,13 @@ gulp.task('bundle', function () {
 });
 
 gulp.task('copy:css', function () {
-  gulp.src('src/index.css')
+  return gulp.src('src/index.css')
     .pipe(rename('build.css'))
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('copy:html', function () {
-  gulp.src('index.html')
+  return gulp.src('index.html')
     .pipe(gulp.dest('dist'))
 });
 
